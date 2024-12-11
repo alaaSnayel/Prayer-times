@@ -1,0 +1,101 @@
+body {
+  background-image: url("ScreenShot\ Tool\ -20241115142225.png");
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  height: 30%;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+#header h1 {
+  font-size: 50px;
+}
+
+#container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  height: auto;
+}
+
+#container #faridah {
+  padding: 0;
+  width: 18%;
+  height: 180px;
+  border: 1bx solid;
+  min-width: 150px;
+  background-color: rgba(71, 96, 96, 0.26);
+  box-shadow: 10px 10px 10px;
+  transition: transform 0.3s ease;
+}
+
+#container #faridah:hover {
+  transform: scale(1.05);
+}
+
+#container #faridah h1 {
+  margin: 0;
+  padding: 5px;
+  font-size: 20px;
+  background-color: rgba(127, 255, 212, 0.365);
+  /* border-radius: 10px 10px 0 0; */
+}
+
+#container #faridah p {
+  font-size: 40px;
+  padding-left: 5px;
+}
+
+#footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#footer select {
+  padding: 5px 20px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid rgb(127, 255, 212);
+}
+
+/* #header p {
+  color: rgb(0, 255, 234);
+} */
+
+/* التصميم للشاشات الصغيرة */
+@media (max-width: 768px) {
+  #container {
+    justify-content: center;
+  }
+
+  #container #faridah {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  #header h1 {
+    font-size: 40px;
+  }
+
+  #container #faridah h1 {
+    font-size: 18px;
+  }
+
+  #container #faridah p {
+    font-size: 30px;
+  }
+
+  #footer select {
+    width: 100%;
+    max-width: 300px;
+  }
+}
